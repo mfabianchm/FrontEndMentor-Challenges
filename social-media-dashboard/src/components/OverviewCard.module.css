@@ -1,0 +1,54 @@
+.overviewCard {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.overviewCardDark {
+  background-color: var(--Dark-Desaturated-Blue);
+}
+
+.overviewCardLight {
+  background-color: var(--Light-Grayish-Blue);
+}
+
+.firstContainer,
+.secondContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstContainer {
+  margin-bottom: 20px;
+}
+
+.dataType {
+  color: var(--Desaturated-Blue);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.overviewNumber {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.overviewNumberDark {
+  color: var(--White);
+}
+
+.overviewNumberLight {
+  color: var(--Very-Dark-Blue);
+}
+
+.overviewPercentage {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.percentage {
+  display: flex;
+  align-items: center;
+}

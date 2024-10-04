@@ -1,0 +1,140 @@
+#root {
+  margin: 0 auto;
+}
+
+/* ### REACT TOOGLE STYLES ### */
+
+.react-toggle {
+  touch-action: pan-x;
+
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-toggle-screenreader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.react-toggle--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.custom-toggle-class .react-toggle-track {
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border-radius: 30px;
+  background: linear-gradient(
+    to right,
+    var(--Toggle-gradient01),
+    var(--Toggle-gradient02)
+  );
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.custom-toggle-class.react-toggle--checked:hover:not(.react-toggle--disabled)
+  .react-toggle-track {
+  background: var(--Dark-Grayish-Blue);
+}
+
+.custom-toggle-class .react-toggle-thumb {
+  background-color: var(--Dark-Desaturated-Blue);
+  border: none;
+}
+
+.custom-toggle-class.react-toggle--checked .react-toggle-thumb {
+  background-color: var(--White);
+}
+
+/* ### APP STYLES ### */
+
+.header {
+  border-bottom: 1px solid var(--Dark-Grayish-Blue);
+}
+
+.header-text {
+  font-size: 26px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.header-text-dark {
+  color: var(--White);
+}
+
+.header-text-light {
+  color: var(--Very-Dark-Blue);
+}
+
+.total-followers-text {
+  color: var(--Desaturated-Blue);
+  font-weight: 700;
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.light-dark-modes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Desaturated-Blue);
+  font-weight: 700;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .user-card-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header {
+    border-bottom: none;
+  }
+
+  .style-mode {
+    margin-right: 10px;
+  }
+
+  .overview-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
