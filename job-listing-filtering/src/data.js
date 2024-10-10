@@ -1,0 +1,173 @@
+import image01 from "./assets/images/photosnap.svg";
+import image02 from "./assets/images/manage.svg";
+import image03 from "./assets/images/account.svg";
+import image04 from "./assets/images/myhome.svg";
+import image05 from "./assets/images/loop-studios.svg";
+import image06 from "./assets/images/faceit.svg";
+import image07 from "./assets/images/shortly.svg";
+import image08 from "./assets/images/insure.svg";
+import image09 from "./assets/images/eyecam-co.svg";
+import image10 from "./assets/images/the-air-filter-company.svg";
+
+const data = [
+  {
+    id: 1,
+    company: "Photosnap",
+    logo: image01,
+    new: true,
+    featured: true,
+    position: "Senior Frontend Developer",
+    role: "Frontend",
+    level: "Senior",
+    postedAt: "1d ago",
+    contract: "Full Time",
+    location: "USA Only",
+    languages: ["HTML", "CSS", "JavaScript"],
+    tools: [],
+  },
+  {
+    id: 2,
+    company: "Manage",
+    logo: image02,
+    new: true,
+    featured: true,
+    position: "Fullstack Developer",
+    role: "Fullstack",
+    level: "Midweight",
+    postedAt: "1d ago",
+    contract: "Part Time",
+    location: "Remote",
+    languages: ["Python"],
+    tools: ["React"],
+  },
+  {
+    id: 3,
+    company: "Account",
+    logo: image03,
+    new: true,
+    featured: false,
+    position: "Junior Frontend Developer",
+    role: "Frontend",
+    level: "Junior",
+    postedAt: "2d ago",
+    contract: "Part Time",
+    location: "USA Only",
+    languages: ["JavaScript"],
+    tools: ["React", "Sass"],
+  },
+  {
+    id: 4,
+    company: "MyHome",
+    logo: image04,
+    new: false,
+    featured: false,
+    position: "Junior Frontend Developer",
+    role: "Frontend",
+    level: "Junior",
+    postedAt: "5d ago",
+    contract: "Contract",
+    location: "USA Only",
+    languages: ["CSS", "JavaScript"],
+    tools: [],
+  },
+  {
+    id: 5,
+    company: "Loop Studios",
+    logo: image05,
+    new: false,
+    featured: false,
+    position: "Software Engineer",
+    role: "Fullstack",
+    level: "Midweight",
+    postedAt: "1w ago",
+    contract: "Full Time",
+    location: "Worldwide",
+    languages: ["JavaScript", "Ruby"],
+    tools: ["Sass"],
+  },
+  {
+    id: 6,
+    company: "FaceIt",
+    logo: image06,
+    new: false,
+    featured: false,
+    position: "Junior Backend Developer",
+    role: "Backend",
+    level: "Junior",
+    postedAt: "2w ago",
+    contract: "Full Time",
+    location: "UK Only",
+    languages: ["Ruby"],
+    tools: ["RoR"],
+  },
+  {
+    id: 7,
+    company: "Shortly",
+    logo: image07,
+    new: false,
+    featured: false,
+    position: "Junior Developer",
+    role: "Frontend",
+    level: "Junior",
+    postedAt: "2w ago",
+    contract: "Full Time",
+    location: "Worldwide",
+    languages: ["HTML", "JavaScript"],
+    tools: ["Sass"],
+  },
+  {
+    id: 8,
+    company: "Insure",
+    logo: image08,
+    new: false,
+    featured: false,
+    position: "Junior Frontend Developer",
+    role: "Frontend",
+    level: "Junior",
+    postedAt: "2w ago",
+    contract: "Full Time",
+    location: "USA Only",
+    languages: ["JavaScript"],
+    tools: ["Vue", "Sass"],
+  },
+  {
+    id: 9,
+    company: "Eyecam Co.",
+    logo: image09,
+    new: false,
+    featured: false,
+    position: "Full Stack Engineer",
+    role: "Fullstack",
+    level: "Midweight",
+    postedAt: "3w ago",
+    contract: "Full Time",
+    location: "Worldwide",
+    languages: ["JavaScript", "Python"],
+    tools: ["Django"],
+  },
+  {
+    id: 10,
+    company: "The Air Filter Company",
+    logo: image10,
+    new: false,
+    featured: false,
+    position: "Front-end Dev",
+    role: "Frontend",
+    level: "Junior",
+    postedAt: "1mo ago",
+    contract: "Part Time",
+    location: "Worldwide",
+    languages: ["JavaScript"],
+    tools: ["React", "Sass"],
+  },
+];
+
+function filterData(tags) {
+  const jobsToShow = data.filter((job) => {
+    const tagsToCheck = [job.role, job.level, ...job.languages, ...job.tools];
+    return tags.every((tag) => tagsToCheck.includes(tag));
+  });
+  return jobsToShow;
+}
+
+export { data, filterData };

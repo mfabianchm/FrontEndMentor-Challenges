@@ -1,0 +1,54 @@
+.tags {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin: 30px;
+  padding: 15px;
+}
+
+.tagButtonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+}
+
+.spanButton {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: var(--Light-Grayish-Cyan);
+  color: var(--Desaturated-Dark-Cyan);
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.tagButton {
+  display: flex;
+  height: 31px;
+  width: 31px;
+  background-color: var(--Desaturated-Dark-Cyan);
+  margin-left: 10px;
+  border: none;
+  background-image: url(../assets/images/icon-remove.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+}
+
+.clearButton {
+  background-color: white;
+  color: var(--Dark-Grayish-Cyan);
+}
+
+.clearButton:hover {
+  cursor: pointer;
+  color: var(--Desaturated-Dark-Cyan);
+  text-decoration: underline;
+}
+
+.tagButton:hover {
+  cursor: pointer;
+  background-color: var(--Very-Dark-Grayish-Cyan);
+  color: white;
+}
