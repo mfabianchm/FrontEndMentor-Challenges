@@ -1,0 +1,37 @@
+:root {
+  font-family: "Barlow Semi Condensed", sans-serif;
+
+  /* ### Colors ### */
+
+  --Scissors-Gradient01: hsl(39, 89%, 49%);
+  --Scissors-Gradient02: rgb(217, 155, 35, 0.7);
+  --Paper-Gradient01: hsl(230, 89%, 65%);
+  --Paper-Gradient02: rgb(72, 113, 242, 0.7);
+  --Rock-Gradient01: hsl(349, 71%, 52%);
+  --Rock-Gradient02: rgb(242, 75, 95, 0.5);
+  --Lizard-Gradient01: hsl(261, 73%, 60%);
+  --Lizard-Gradient02: rgb(242, 75, 95, 0.7);
+  --Cyan01: hsl(189, 59%, 53%);
+  --Cyan02: to hsl(189, 58%, 57%);
+
+  --Dark-Text: hsl(229, 25%, 31%);
+  --Score-Text: hsl(229, 64%, 46%);
+  --Header-Outline: hsl(217, 16%, 45%);
+
+  /* ### Background ### */
+
+  --Radial-Gradient01: hsl(214, 47%, 23%);
+  --Radial-Gradient02: hsl(237, 49%, 15%);
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

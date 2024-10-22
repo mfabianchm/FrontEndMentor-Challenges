@@ -1,0 +1,46 @@
+.scoreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border: 2px solid var(--Header-Outline);
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  top: -50px;
+}
+
+.title {
+  color: white;
+  line-height: 25px;
+}
+
+.score {
+  background-color: white;
+  border-radius: 3px;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  text-align: center;
+}
+
+.scoreTitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--Score-Text);
+}
+
+.scoreNumber {
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--Dark-Text);
+}
+
+@media (min-width: 768px) {
+  .appContainer {
+    width: 600px;
+  }
+}
